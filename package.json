@@ -1,0 +1,23 @@
+{
+  "name": "@heat/captcha",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heat-js/captcha.git"
+  },
+  "bugs": {
+    "url": "https://github.com/heat-js/captcha/issues"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/jest",
+    "patch": "yarn version --patch; ./node_modules/.bin/ncp",
+    "minor": "yarn version --minor; ./node_modules/.bin/ncp",
+    "major": "yarn version --major; ./node_modules/.bin/ncp",
+    "deploy": "yarn version; ./node_modules/.bin/ncp"
+  },
+  "devDependencies": {
+    "@heat/npm-coffee-publisher": "^0.1.6"
+  }
+}
